@@ -1,0 +1,3 @@
+- 编写语言 kotlin 1.3.72
+- buildGradle4.0.1 wrapper6.1.1
+- 支持库 androidx appcompat1.1.0
