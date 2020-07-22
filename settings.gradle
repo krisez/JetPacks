@@ -1,2 +1,6 @@
+include ':page'
+include ':behavior'
+include ':arch'
+include ':basic'
 include ':app'
 rootProject.name = "JetPacks"
