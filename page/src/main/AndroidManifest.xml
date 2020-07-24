@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.krisez.page">
 
-    /
+    <application>
+        <activity android:name=".PageActivity"/>
+    </application>
 </manifest>
