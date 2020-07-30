@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ktx_describe" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/kuozhanhanshu"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="扩展函数" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/kuozhanshuxing"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="扩展属性" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/lambda"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Lambda" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/canshu"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="命名参数/参数默认值" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/xiecheng"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="协程" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ktx_module" />
+    </LinearLayout>
+</ScrollView>

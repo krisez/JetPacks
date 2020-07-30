@@ -1,6 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ktx"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/android_ktx"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/compat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/appcompat"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/auto"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/auto"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/check"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/dex"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/dex"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/security"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/security"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/test"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/tv"
+            android:textColor="@color/qmui_config_color_pure_black" />
+
+        <TextView
+            android:id="@+id/wear"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/qmui_config_color_white"
+            android:gravity="center"
+            android:text="@string/wear_os_by_google"
+            android:textColor="@color/qmui_config_color_pure_black" />
+    </LinearLayout>
+
+</ScrollView>

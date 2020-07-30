@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="协程是我们在 Android 上进行异步编程的推荐解决方案。值得关注的功能包括：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="轻量：您可以在单个线程上运行多个协程，因为协程支持暂停，不会使正在运行协程的线程阻塞。暂停比阻塞节省内存，且支持多个并行操作。\n
+内存泄露更少：使用结构化并发机制在一个作用域内执行多个操作。\n
+内置取消支持：取消功能会自动通过正在运行的协程层次结构传播。\n
+Jetpack 集成：许多 Jetpack 库都包含提供全面协程支持的扩展。某些库还提供自己的协程作用域，可供您用于结构化并发。"
+            android:textColor="@color/qmui_config_color_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="主要通过launch方法，withContext，runBlocking，GlobalScope拉起协程，具体请查看右上角" />
+
+        <TextView
+            android:id="@+id/kotlin_official"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Github官网（戳）"
+            android:textColor="@color/qmui_config_color_red" />
+
+    </LinearLayout>
+</ScrollView>

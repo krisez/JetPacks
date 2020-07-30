@@ -2,5 +2,11 @@
     package="cn.krisez.basic">
     <application>
         <activity android:name=".BasicActivity"/>
+        <activity android:name=".KtxActivity"/>
+        <activity android:name=".ktx.KzhsActivity"/>
+        <activity android:name=".ktx.KzsxActivity" />
+        <activity android:name=".ktx.LambdaActivity" />
+        <activity android:name=".ktx.CsActivity" />
+        <activity android:name=".ktx.XcActivity" />
     </application>
 </manifest>

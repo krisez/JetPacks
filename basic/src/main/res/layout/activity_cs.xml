@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6E6E6"
+            android:padding="8dp"
+            android:text="fun reformat(str: String,\n
+             normalizeCase: Boolean = true,\n
+             upperCaseFirstLetter: Boolean = true,\n
+             divideByCamelHumps: Boolean = false,\n
+             wordSeparator: Char = ' ') {/*……*/}"
+            android:textColor="@color/qmui_config_color_pure_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="默认参数\n函数参数可以有默认值，当省略相应的参数时使用默认值。这样就可以减少重载方法的编写。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="reformat('asd')即可，也可根据顺序替换默认的参数值" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="具名参数\n可以在调用函数时使用具名的函数参数。当一个函数有大量的参数或默认参数时这会非常方便。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6E6E6"
+            android:padding="8dp"
+            android:text="reformat(str, wordSeparator = '_')"
+            android:textColor="@color/qmui_config_color_pure_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="对具体的某一个参数赋值，其他的默认值" />
+    </LinearLayout>
+</ScrollView>

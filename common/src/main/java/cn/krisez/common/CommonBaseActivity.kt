@@ -1,5 +1,6 @@
 package cn.krisez.common
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
@@ -14,7 +15,7 @@ abstract class CommonBaseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_common_base)
         QMUIStatusBarHelper.translucent(this)
         QMUIStatusBarHelper.setStatusBarLightMode(this)
-        view()?.let{
+        view()?.let {
             container.addView(it, FrameLayout.LayoutParams(MATCH_PARENT, MATCH_PARENT))
         }
         init()
@@ -23,6 +24,14 @@ abstract class CommonBaseActivity : AppCompatActivity() {
     protected fun setTitle(title: String) {
         topbar.addLeftBackImageButton().setOnClickListener { finish() }
         topbar.setTitle(title)
+    }
+
+    protected fun addRightHelp(url: String, title: String) {
+        topbar.addRightImageButton(R.drawable.ic_help, R.id.right_view).setOnClickListener {
+            startActivity(
+                Intent(this, WebActivity::class.java).putExtra("url", url).putExtra("title", title)
+            )
+        }
     }
 
     abstract fun init()

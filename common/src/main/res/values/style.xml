@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="CommonTheme" parent="QMUI.Compat.NoActionBar">
+        <item name="QMUIButtonStyle">@style/Button1</item>
+    </style>
 
+    <style name="Button1" parent="QMUI.RoundButton">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="qmui_borderWidth">1dp</item>
+        <item name="qmui_radius">8dp</item>
+        <item name="qmui_borderColor">@color/qmui_config_color_pure_black</item>
+        <item name="android:textColor">@color/text_color</item>
     </style>
 </resources>

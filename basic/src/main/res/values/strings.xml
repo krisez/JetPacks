@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="android_ktx">Android KTX</string>
+    <string name="appcompat">AppCompat</string>
+    <string name="auto">auto</string>
+    <string name="check">检测</string>
+    <string name="dex">多DEX处理</string>
+    <string name="security">安全</string>
+    <string name="test">测试</string>
+    <string name="tv">TV</string>
+    <string name="wear_os_by_google">wear os by google</string>
+    <string name="ktx_describe">Android KTX 是包含在 Android Jetpack 及其他 Android 库中的一组 Kotlin 扩展程序。KTX 扩展程序可以为 Jetpack、Android 平台及其他 API 提供简洁的惯用 Kotlin 代码。为此，这些扩展程序利用了多种 Kotlin 语言功能，其中包括：</string>
+    <string name="ktx_module">Android KTX 分为若干模块，每个模块包含一个或多个软件包。\n您必须在应用的 build.gradle 文件中为每个模块工件添加一个依赖项。请务必在工件后面附上版本号。可以在本主题中每个工件的相应部分找到最新版本号。\nAndroid KTX 包含一个核心模块，该模块可为通用框架 API 提供 Kotlin 扩展程序，而且还能提供一些领域专用的扩展程序。\n除了核心模块之外，所有 KTX 模块工件都会替换 build.gradle 文件中的底层 Java 依赖项。例如，您可以将 androidx.fragment:fragment 依赖项替换为 androidx.fragment:fragment-ktx。此语法有助于更好地管理版本控制，而不会增加额外的依赖项声明要求。</string>
+    <string name="ktx_kzhs">Kotlin 能够扩展一个类的新功能而无需继承该类或者使用像装饰者这样的设计模式。 这通过叫做 扩展 的特殊声明完成。 例如，你可以为一个你不能修改的、来自第三方库中的类编写一个新的函数。 这个新增的函数就像那个原始类本来就有的函数一样，可以用普通的方法调用。 这种机制称为 扩展函数 。此外，也有 扩展属性 ， 允许你为一个已经存在的类添加新的属性。</string>
+</resources>
