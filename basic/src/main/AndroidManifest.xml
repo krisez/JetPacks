@@ -8,5 +8,6 @@
         <activity android:name=".ktx.LambdaActivity" />
         <activity android:name=".ktx.CsActivity" />
         <activity android:name=".ktx.XcActivity" />
+        <activity android:name=".CompatActivity" />
     </application>
 </manifest>

@@ -9,7 +9,7 @@ class BasicActivity : CommonBaseActivity() {
     override fun init() {
         setTitle("基础")
         ktx.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
-        compat.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
+        compat.setOnClickListener { startActivity(Intent(this, CompatActivity::class.java)) }
         auto.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
         check.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
         dex.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
