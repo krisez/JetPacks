@@ -9,5 +9,8 @@
         <activity android:name=".ktx.CsActivity" />
         <activity android:name=".ktx.XcActivity" />
         <activity android:name=".CompatActivity" />
+        <activity android:name=".AutoActivity" />
+        <activity android:name=".CheckActivity" />
+        <activity android:name=".ktx.DexActivity" />
     </application>
 </manifest>

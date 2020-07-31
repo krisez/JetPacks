@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="代码方法数超过65536后需要对dex处理，以往是单dex文件，因此为了绕过限制有了多DEX的处理" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="dependencies {\n    implementation 'androidx.multidex:multidex:2.0.1'\n}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="如果您不使用 AndroidX，请改为添加以下支持库依赖项：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="dependencies {\n  implementation 'com.android.support:multidex:1.0.3'\n}" />
+
+    </LinearLayout>
+</ScrollView>

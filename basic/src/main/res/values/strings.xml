@@ -2,7 +2,7 @@
 <resources>
     <string name="android_ktx">Android KTX</string>
     <string name="appcompat">AppCompat</string>
-    <string name="auto">auto</string>
+    <string name="auto">Auto</string>
     <string name="check">检测</string>
     <string name="dex">多DEX处理</string>
     <string name="security">安全</string>

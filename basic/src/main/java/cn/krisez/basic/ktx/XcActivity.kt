@@ -32,7 +32,7 @@ class XcActivity : CommonBaseActivity() {
     }
 
     suspend fun enh() {
-        val j = CoroutineScope(Dispatchers.Default).launch {
+        CoroutineScope(Dispatchers.Default).launch {
             Log.d("asdasd", "enh:1")
             delay(4000)
             Log.d("asdasd", "enh:2")

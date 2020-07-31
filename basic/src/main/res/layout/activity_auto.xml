@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="让您在编写应用时无需担心特定于车辆的硬件差异（如屏幕分辨率、软件界面、旋钮和触摸式控件）。用户可以通过手机上的 Android Auto 应用访问您的应用。或者，当连接到兼容车辆时，运行 Android 5.0（或更高版本）的手持设备上的应用可以与通过 Android Auto 投射到车辆的应用进行通信。" />
+
+    <TextView
+        android:id="@+id/web_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="具体内容为：\n车载终端是Android Auto，手机上通过Android Auto应用即可将手机应用展示在车载屏幕上" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TIPS：国内原因，谷歌服务无法使用" />
+
+</LinearLayout>

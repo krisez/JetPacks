@@ -10,8 +10,8 @@ class BasicActivity : CommonBaseActivity() {
         setTitle("基础")
         ktx.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
         compat.setOnClickListener { startActivity(Intent(this, CompatActivity::class.java)) }
-        auto.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
-        check.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
+        auto.setOnClickListener { startActivity(Intent(this, AutoActivity::class.java)) }
+        check.setOnClickListener { startActivity(Intent(this, CheckActivity::class.java)) }
         dex.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
         security.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
         test.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用 Jetpack 基准库，您可以在 Android Studio 中快速对 Kotlin 或 Java 代码进行基准化分析。该库会处理预热，衡量代码性能，并将基准化分析结果输出到 Android Studio 控制台。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="具体内容为：\n类似于junit执行单元测试，不过其可单独作为一个依赖库，用以在生产环境中测试代码性能，得到系统的一个性能测试（跑分）。\n或自定义测试内容，得到对应的测试报告。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TIPS：需要AndroidX" />
+
+    <TextView
+        android:id="@+id/web_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Sample"
+        android:textColor="@color/qmui_config_color_red" />
+
+</LinearLayout>
