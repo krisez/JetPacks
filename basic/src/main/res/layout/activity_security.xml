@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security 库提供了与读取和写入静态数据以及密钥创建和验证相关的安全最佳做法实现方法。\n该库使用构建器模式为以下安全等级提供安全的默认设置：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text=" 在可靠加密和良好性能之间取得平衡的强安全性。这种安全等级适用于银行和聊天应用等消费者应用，以及执行证书吊销检查的企业应用。\n 最高安全性。这种安全等级适用于需要由硬件支持的密钥库和用户上线以提供密钥访问权限的应用。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="密钥管理" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="Security 库使用一个由两部分组成的密钥管理系统：\n
+
+包含一个或多个密钥的密钥集，用于加密文件或共享偏好设置数据。密钥集本身存储在 SharedPreferences 中。\n
+
+用于加密所有密钥集的主 (master) 密钥。此密钥使用 Android 密钥库系统进行存储。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="在您的项目中包含库" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="dependencies {\n    implementation 'androidx.security:security-crypto:1.0.0-alpha02'\n}" />
+
+    </LinearLayout>
+</ScrollView>

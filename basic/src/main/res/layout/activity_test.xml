@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试应用是应用开发过程中不可或缺的一部分。通过持续对应用运行测试，您可以在公开发布应用之前验证其正确性、功能行为和易用性。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="快速获得故障反馈。\n在开发周期中尽早进行故障检测。\n更安全的代码重构，让您可以优化代码而不必担心回归。\n稳定的开发速度，帮助您最大限度地减轻技术负担。" />
+    </LinearLayout>
+</ScrollView>

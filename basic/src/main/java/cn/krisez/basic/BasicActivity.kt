@@ -12,11 +12,11 @@ class BasicActivity : CommonBaseActivity() {
         compat.setOnClickListener { startActivity(Intent(this, CompatActivity::class.java)) }
         auto.setOnClickListener { startActivity(Intent(this, AutoActivity::class.java)) }
         check.setOnClickListener { startActivity(Intent(this, CheckActivity::class.java)) }
-        dex.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
-        security.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
-        test.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
-        tv.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
-        wear.setOnClickListener { startActivity(Intent(this, KtxActivity::class.java)) }
+        dex.setOnClickListener { startActivity(Intent(this, DexActivity::class.java)) }
+        security.setOnClickListener { startActivity(Intent(this, SecurityActivity::class.java)) }
+        test.setOnClickListener { startActivity(Intent(this, TestActivity::class.java)) }
+        tv.setOnClickListener { startActivity(Intent(this, TvActivity::class.java)) }
+        wear.setOnClickListener { startActivity(Intent(this, WearActivity::class.java)) }
     }
 
     override fun view(): View? = View.inflate(this, R.layout.activity_basic_main, null)

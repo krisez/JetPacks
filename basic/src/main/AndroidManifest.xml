@@ -11,6 +11,10 @@
         <activity android:name=".CompatActivity" />
         <activity android:name=".AutoActivity" />
         <activity android:name=".CheckActivity" />
-        <activity android:name=".ktx.DexActivity" />
+        <activity android:name=".DexActivity" />
+        <activity android:name=".SecurityActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".TvActivity" />
+        <activity android:name=".WearActivity" />
     </application>
 </manifest>

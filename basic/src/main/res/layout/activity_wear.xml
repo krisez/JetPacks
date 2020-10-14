@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="借助 Wear OS by Google 谷歌，您可以编写可让用户保持联系、完成任务和表达自己的应用。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Wear OS 基于 Android 设计，并且专门针对腕部佩戴进行了优化。如果您已有 Android 开发经验，那么您可能会对应用、通知和 Actions on Google 等功能十分熟悉。 此外，Wear OS 还提供了新的开发选项，例如表盘主题。" />
+
+    </LinearLayout>
+</ScrollView>
