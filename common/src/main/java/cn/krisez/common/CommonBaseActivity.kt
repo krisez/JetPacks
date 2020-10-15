@@ -19,10 +19,10 @@ abstract class CommonBaseActivity : AppCompatActivity() {
             container.addView(it, FrameLayout.LayoutParams(MATCH_PARENT, MATCH_PARENT))
         }
         init()
+        topbar.addLeftBackImageButton().setOnClickListener { finish() }
     }
 
     protected fun setTitle(title: String) {
-        topbar.addLeftBackImageButton().setOnClickListener { finish() }
         topbar.setTitle(title)
     }
 

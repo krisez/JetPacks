@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android 架构组件" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Android 架构组件是一组库，可帮助您设计稳健、可测试且易维护的应用。您可以从管理界面组件生命周期和处理数据持久性的类着手。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="-  通过应用架构指南，学习有关汇编稳健应用的基础知识。\n-  管理应用的生命周期。新的生命周期感知型组件可帮助您管理 Activity 和 Fragment \n-  使用 LiveData 构建数据对象，在基础数据库改变时通知视图。\n-  ViewModel 存储界面相关的数据，这些数据不会在应用轮转时销毁。\n-  Room 是一个 SQLite 对象映射库。它可用来避免样板代码，并轻松地将 SQLite 表数据转换为 Java 对象。Room 提供 SQLite 语句的编译时检查，并且可以返回 RxJava、Flowable 和 LiveData 可观察对象。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="推荐应用架构" />
+
+        <ImageView
+            android:id="@+id/arch_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@mipmap/architecture"/>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/doc_arch"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="架构组件文档" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
