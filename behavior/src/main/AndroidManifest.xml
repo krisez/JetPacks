@@ -1,7 +1,34 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.krisez.behavior">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application>
-        <activity android:name=".BehaviorActivity"/>
+        <activity android:name=".BehaviorActivity" />
+        <activity android:name=".CameraXActivity" />
+        <activity android:name=".CameraPreActivity">
+            <!-- Register as a system camera app -->
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+                <action android:name="android.media.action.VIDEO_CAMERA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- Declare notch support -->
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+        <!-- FileProvider used to share photos with other apps -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 </manifest>

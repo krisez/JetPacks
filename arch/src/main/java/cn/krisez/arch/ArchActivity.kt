@@ -14,9 +14,6 @@ class ArchActivity : CommonBaseActivity() {
         doc_arch.setOnClickListener {
             startActivity(Intent(this, WebActivity::class.java).putExtra("url", "https://developer.android.google.cn/topic/libraries/architecture/"))
         }
-        arch_img.setOnClickListener{
-            QMUIDialog.CustomDialogBuilder(this).setLayout(R.layout.layout_img).show()
-        }
     }
 
     override fun view(): View? = View.inflate(this, R.layout.activity_arch, null)

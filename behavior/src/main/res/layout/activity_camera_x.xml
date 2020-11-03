@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CameraX 是一个 Jetpack 支持库，旨在帮助您简化相机应用的开发工作。它提供一致且易于使用的 API Surface，适用于大多数 Android 设备，并可向后兼容至 Android 5.0（API 级别 21）。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="虽然它利用的是 camera2 的功能，但使用的是更为简单且基于用例的方法，该方法具有生命周期感知能力。它还解决了设备兼容性问题，因此您无需在代码库中添加设备专属代码。这些功能减少了将相机功能添加到应用时需要编写的代码量。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最后，借助 CameraX，开发者只需两行代码就能利用与预安装的相机应用相同的相机体验和功能。CameraX Extensions 是可选插件，通过该插件，您可以在支持的设备上添加效果。这些效果包括人像、HDR、夜间模式和美颜。" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/camera_x_preview"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Demo预览" />
+
+    </LinearLayout>
+</ScrollView>
