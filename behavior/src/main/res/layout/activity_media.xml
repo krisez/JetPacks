@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本部分介绍了如何将媒体播放器应用分为媒体控制器（用于界面）和媒体会话（用于实际播放器）；描述了两种媒体应用架构：适用于音频应用的客户端/服务器设计和适用于视频播放器的单 Activity 设计；此外还介绍了如何让媒体应用响应硬件控制，并与使用音频输出流的其他应用配合使用。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="播放器和界面"
+            android:textColor="@color/qmui_config_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="播放器，用于吸收数字媒体并将其呈现为视频和/或音频\n界面，带有用于运行播放器并显示播放器状态（可选）的传输控件" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ui_and_player" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在 Android 中，您可以从零开始构建自己的播放器，也可以从以下选项中进行选择：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="MediaPlayer 类提供准系统播放器的基本功能，支持最常见的音频/视频格式和数据源。\n\nExoPlayer 是一个提供低层级 Android 音频 API 的开放源代码库。ExoPlayer 支持 DASH 和 HLS 流等高性能功能，这些功能在 MediaPlayer 中未提供。您可以自定义 ExoPlayer 代码，从而轻松添加新组件。ExoPlayer 只能用于 Android 4.1 及更高版本。\n\n当然还可以使用FFMPEG编译后在Android平台使用" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="媒体会话和媒体控制器"
+            android:textColor="@color/qmui_config_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="媒体会话和媒体控制器通过以下方式相互通信：\n使用与标准播放器操作（播放、暂停、停止等）相对应的预定义回调，以及用于定义应用独有的特殊行为的可扩展自定义调用。" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/controller_and_session" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="媒体会话" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="会话会维护播放器状态（播放/暂停）的表示形式以及播放内容的相关信息。会话可以接收来自一个或多个媒体控制器的回调。这样，应用的界面以及运行 Wear OS 和 Android Auto 的配套设备便可以控制您的播放器。响应回调的逻辑必须保持一致。无论哪个客户端应用发起了回调，对 MediaSession 回调的响应都应该相同。" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="媒体控制器" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="媒体控制器会隔离您的界面。您的界面代码只与媒体控制器（而非播放器本身）通信。媒体控制器会将传输控制操作转换为对媒体会话的回调。每当会话状态发生变化时，它也会接收来自媒体会话的回调。这提供了一种自动更新关联界面的机制。媒体控制器一次只能连接到一个媒体会话。" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="视频应用"
+            android:textColor="@color/qmui_config_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="视频应用需要一个窗口来查看内容。出于这个原因，视频应用通常作为单个 Android Activity 来实现。呈现视频的屏幕是 Activity 的一部分。" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/video_player_activity" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="音频应用"
+            android:textColor="@color/qmui_config_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="要在 Android 中实现此设计，您可以使用两个组件构建音频应用：对界面使用 Activity，对播放器使用服务。如果用户切换到其他应用，该服务可以在后台运行。通过将音频应用的两个部分分解为单独的组件，每个组件都可以更高效地独立运行。与播放器（可能会在没有界面的情况下运行很长时间）不同，界面通常是短时的。" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/audio_activity_and_service" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/qmui_config_color_10_pure_black"
+            android:text="支持库提供了两个类来实现此客户端/服务器方法：MediaBrowserService 和 MediaBrowser。服务组件作为包含媒体会话及其播放器的 MediaBrowserService 子类来实现。包含界面和媒体控制器的 Activity 应该包括一个 MediaBrowser，后者与 MediaBrowserService 进行通信。\n使用 MediaBrowserService 可以让配套设备（如 Android Auto 和 Wear）轻松发现您的应用，连接到该应用，浏览内容并控制播放，而根本无需访问应用的界面 Activity。事实上，可以有多个应用同时连接到同一个 MediaBrowserService，每个应用都有自己的 MediaController。提供 MediaBrowserService 的应用应该能够同时处理多个连接。" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/media_video"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Video Demo" />
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/media_audio"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Audio Demo" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

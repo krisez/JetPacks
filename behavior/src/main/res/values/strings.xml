@@ -2,4 +2,5 @@
 <resources>
     <string name="behavior_camerax">CameraX</string>
     <string name="camera_tips">Android API 级别 21\nAndroid 架构组件 1.1.1</string>
+    <string name="behavior_media">媒体应用架构概览</string>
 </resources>

@@ -26,6 +26,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -53,5 +57,14 @@ dependencies {
 
     // CameraX Extensions library
     // implementation "androidx.camera:camera-extensions:1.0.0-alpha09"
+
+    def androidx_media_version = "1.0.1"
+    def exoplayer_version = '2.11.5'
+    //media-compat
+    implementation "androidx.media:media:$androidx_media_version"
+    //exo
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$exoplayer_version"
+    implementation "com.google.android.exoplayer:extension-mediasession:$exoplayer_version"
 
 }

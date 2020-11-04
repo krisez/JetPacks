@@ -5,8 +5,8 @@
 
     <application>
         <activity android:name=".BehaviorActivity" />
-        <activity android:name=".CameraXActivity" />
-        <activity android:name=".CameraPreActivity">
+        <activity android:name=".camera.CameraXActivity" />
+        <activity android:name=".camera.CameraPreActivity">
             <!-- Register as a system camera app -->
             <intent-filter>
                 <action android:name="android.media.action.IMAGE_CAPTURE" />
@@ -20,6 +20,15 @@
                 android:name="android.notch_support"
                 android:value="true" />
         </activity>
+        <activity android:name=".media.MediaActivity" />
+        <activity android:name=".media.MediaAudioActivity" />
+        <activity android:name=".media.MediaVideoActivity" />
+
+        <service android:name=".media.MediaPlaybackService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
         <!-- FileProvider used to share photos with other apps -->
         <provider
             android:name="androidx.core.content.FileProvider"
