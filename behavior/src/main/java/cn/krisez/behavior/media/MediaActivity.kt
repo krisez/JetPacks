@@ -3,6 +3,7 @@ package cn.krisez.behavior.media
 import android.content.Intent
 import android.view.View
 import cn.krisez.behavior.R
+import cn.krisez.behavior.media.audio.MediaAudioActivity
 import cn.krisez.common.CommonBaseActivity
 import kotlinx.android.synthetic.main.activity_media.*
 

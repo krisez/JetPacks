@@ -4,14 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp">
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="订阅"
+        android:textSize="16sp" />
 
     <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
         android:id="@+id/play_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="6dp"
-        android:text="点击按钮"
+        android:text="播放暂停"
         android:textSize="16sp" />
 
 </LinearLayout>

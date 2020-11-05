@@ -2,6 +2,7 @@
     package="cn.krisez.behavior">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
     <application>
         <activity android:name=".BehaviorActivity" />
@@ -21,10 +22,17 @@
                 android:value="true" />
         </activity>
         <activity android:name=".media.MediaActivity" />
-        <activity android:name=".media.MediaAudioActivity" />
+        <activity android:name=".media.audio.MediaAudioActivity" />
         <activity android:name=".media.MediaVideoActivity" />
 
-        <service android:name=".media.MediaPlaybackService">
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".media.audio.MediaPlaybackService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
@@ -39,5 +47,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+        <provider
+            android:name="cn.krisez.behavior.media.audio.library.AlbumArtContentProvider"
+            android:authorities="com.example.android.uamp.media.library.provider"
+            android:exported="true" />
     </application>
 </manifest>

@@ -1,4 +1,4 @@
-package cn.krisez.behavior.media
+package cn.krisez.behavior.media.audio
 
 import android.graphics.Bitmap
 import android.net.Uri
