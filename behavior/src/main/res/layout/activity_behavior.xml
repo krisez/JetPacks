@@ -24,4 +24,14 @@
         android:text="@string/behavior_media"
         android:textColor="@color/qmui_config_color_pure_black" />
 
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/qmui_config_color_white"
+        android:gravity="center"
+        android:text="@string/behavior_setting"
+        android:textColor="@color/qmui_config_color_pure_black" />
+
 </LinearLayout>

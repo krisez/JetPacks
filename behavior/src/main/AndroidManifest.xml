@@ -24,6 +24,7 @@
         <activity android:name=".media.MediaActivity" />
         <activity android:name=".media.audio.MediaAudioActivity" />
         <activity android:name=".media.MediaVideoActivity" />
+        <activity android:name=".SettingActivity" android:windowSoftInputMode="adjustNothing"/>
 
         <receiver android:name="androidx.media.session.MediaButtonReceiver">
             <intent-filter>
