@@ -13,6 +13,7 @@ class BehaviorActivity : CommonBaseActivity() {
         camerax.setOnClickListener { startActivity(Intent(this, CameraXActivity::class.java)) }
         media.setOnClickListener { startActivity(Intent(this, MediaActivity::class.java)) }
         setting.setOnClickListener { startActivity(Intent(this, SettingActivity::class.java)) }
+        share.setOnClickListener { startActivity(Intent(this,ShareActivity::class.java)) }
     }
 
     override fun view(): View? = View.inflate(this, R.layout.activity_behavior, null)

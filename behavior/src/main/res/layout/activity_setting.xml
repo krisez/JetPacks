@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="介绍如何使用 AndroidX Preference Library。自 Android 10 开始，系统已弃用 android.preference 库平台。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/qmui_config_color_10_pure_black"
+        android:text="设置使用户能够改变应用的功能和行为。设置可以影响后台行为，例如应用与云同步数据的频率；设置的影响还可能更为深远，例如改变用户界面的内容和呈现方式。\n建议使用 AndroidX Preference Library 将用户可配置设置集成至您的应用中。此库管理界面，并与存储空间交互，因此您只需定义用户可以配置的单独设置。此库自带 Material 主题，可在不同的设备和操作系统版本之间提供一致的用户体验。" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android 应用的一大优点是它们能够互相通信和集成。如果某一功能并非应用的核心，而且已存在于另一个应用中，为何要重新开发它？" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/qmui_config_color_10_pure_black"
+        android:text="本节说明如何借助 Intent 对象使用 Android Sharesheet 和 Intent Resolver 在不同应用之间发送和接收简单数据（如文本、图片和文件）的一些常用方法。" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/share_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="分享文本"
+        android:textSize="16sp" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/share_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="分享图片"
+        android:textSize="16sp" />
+</LinearLayout>
