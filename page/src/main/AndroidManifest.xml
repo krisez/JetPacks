@@ -3,5 +3,6 @@
 
     <application>
         <activity android:name=".PageActivity"/>
+        <activity android:name=".PropertyActivity" />
     </application>
 </manifest>
