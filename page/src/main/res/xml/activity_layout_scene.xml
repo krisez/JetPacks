@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorId="@+id/circleView"
+            motion:touchAnchorSide="right" />
+<!--        <KeyFrameSet>
+            <KeyAttribute
+                android:scaleX="2"
+                android:scaleY="2"
+                motion:framePosition="50"
+                motion:motionTarget="@id/circleView" />
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@id/circleView"
+                motion:percentY="-0.3" />
+        </KeyFrameSet>-->
+        <KeyFrameSet>
+            <KeyCycle
+                android:translationY="50dp"
+                motion:framePosition="100"
+                motion:motionTarget="@id/circleView"
+                motion:waveOffset="0"
+                motion:wavePeriod="0"
+                motion:waveShape="sin" />
+            <KeyCycle
+                android:translationY="50dp"
+                motion:framePosition="50"
+                motion:motionTarget="@id/circleView"
+                motion:waveOffset="0"
+                motion:wavePeriod="1"
+                motion:waveShape="sin" />
+            <KeyCycle
+                android:translationY="50dp"
+                motion:framePosition="0"
+                motion:motionTarget="@id/circleView"
+                motion:waveOffset="0"
+                motion:wavePeriod="0"
+                motion:waveShape="sin" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/circleView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="drawColor"
+                motion:customColorValue="#00FFC4" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/circleView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="drawColor"
+                motion:customColorValue="#FF0000" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>

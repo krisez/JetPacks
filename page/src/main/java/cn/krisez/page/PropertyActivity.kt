@@ -20,6 +20,7 @@ import kotlin.random.Random
 class PropertyActivity : CommonBaseActivity() {
     override fun init() {
         setTitle("属性动画")
+        addRightHelp("https://developer.android.google.cn/training/animation","动画")
         btn_linear_animation.setOnClickListener {
             ValueAnimator.ofInt(0, Random.nextInt(300, QMUIDisplayHelper.getScreenWidth(this) - 100))
                     .apply {

@@ -42,4 +42,9 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.8'
     implementation project(":common")
 
+    //emoji有support28的库
+    // implementation "com.android.support:support-emoji:28.0.0"
+    implementation 'androidx.emoji:emoji:1.1.0'
+    implementation 'androidx.emoji:emoji-appcompat:1.1.0'
+    implementation 'androidx.emoji:emoji-bundled:1.1.0'
 }

@@ -4,5 +4,7 @@
     <application>
         <activity android:name=".PageActivity"/>
         <activity android:name=".PropertyActivity" />
+        <activity android:name=".EmojiActivity" />
+        <activity android:name=".LayoutActivity" />
     </application>
 </manifest>
