@@ -4,6 +4,7 @@ import android.animation.*
 import android.graphics.Color
 import android.util.Log
 import android.view.View
+import android.view.animation.AccelerateInterpolator
 import android.view.animation.BounceInterpolator
 import androidx.core.animation.addListener
 import cn.krisez.common.CommonBaseActivity
@@ -118,7 +119,7 @@ class PropertyActivity : CommonBaseActivity() {
             duration = 2000
             addUpdateListener {
                 view.translationX = it.animatedValue as Float
-                view.translationY = a * (it.animatedValue as Float).pow(2)
+                view.translationY = a * ((it.animatedValue as Float).pow(2))
             }
         }
         //第二部，中间转圈，半径增大
@@ -126,8 +127,8 @@ class PropertyActivity : CommonBaseActivity() {
         //（x-a)+(y-b)2 = r2
         val initX2 = screenWidth / 2 - view.width / 2f
         val initY2 = a * initX2.pow(2)
-        val ani2 = ValueAnimator.ofInt(0, Random.nextInt(75, 150)).apply {
-            duration = 3000
+        val ani2 = ValueAnimator.ofInt(0, 1).apply {
+            duration = 3500
             interpolator = BounceInterpolator()
             addUpdateListener {
                 //代表0-5s
@@ -175,8 +176,26 @@ class PropertyActivity : CommonBaseActivity() {
         //从当前位置，二次函数放入
         //ax2+bx+c=y -> 初始值为函数顶点计算  y=a(x-h)2+k
         //y=ax2
+        var initX3 = 0f
+        var initY3 = 0f
+        val ani3 = ValueAnimator.ofFloat(0f, 100f).apply {
+            duration = 2000
+            interpolator = AccelerateInterpolator()
+            addListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationStart(animation: Animator?) {
+                    initX3 = view.translationX
+                    initY3 = view.translationY
+                }
+            })
+            addUpdateListener {
+                view.translationY = initY3 + it.animatedValue as Float * 5
+                view.translationX = initX3 + (it.animatedValue as Float).pow(1.5f) * 1/4
+            }
+
+        }
         return AnimatorSet().apply {
             play(ani1).before(ani2)
+            play(ani2).before(ani3)
         }
     }
 
