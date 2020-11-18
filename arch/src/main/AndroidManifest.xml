@@ -2,5 +2,9 @@
     package="cn.krisez.arch">
     <application>
         <activity android:name=".ArchActivity"/>
+        <activity android:name=".ViewModelActivity" />
+        <activity android:name=".RoomActivity" />
+        <activity android:name=".LiveDataActivity" />
+        <activity android:name=".LifeCycleActivity" />
     </application>
 </manifest>

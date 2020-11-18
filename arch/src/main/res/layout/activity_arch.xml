@@ -46,6 +46,34 @@
             android:layout_marginTop="8dp"
             android:text="架构组件文档" />
 
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/doc_lifecycle"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="lifecycle" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/doc_live_data"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="LiveData" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/doc_view_model"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="ViewModel" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/doc_room"
+            style="@style/Button1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Room" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
