@@ -1,9 +1,6 @@
 package cn.krisez.jetpacks
 
-import android.app.Application
+import cn.krisez.common.MyApp
 
-class App : Application() {
-    override fun onCreate() {
-        super.onCreate()
-    }
+class App : MyApp() {
 }
