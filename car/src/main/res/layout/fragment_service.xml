@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/qmui_topbar_height" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_topbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                app:qmui_backgroundColor="#FAFBFC"
+                app:qmui_borderColor="#D8DCE2"
+                app:qmui_borderWidth="1px"
+                app:qmui_radius="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前累计里程："
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="1000公里"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/service_tv_mile_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="里程修正"
+                    android:textColor="#3880F6"
+                    android:textSize="13sp" />
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:baselineAligned="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="维修保养："
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/service_tv_maintain_distance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="距离下次保养1000公里"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                app:qmui_backgroundColor="#FAFBFC"
+                app:qmui_borderColor="#D8DCE2"
+                app:qmui_borderWidth="1px"
+                app:qmui_radius="8dp">
+
+                <TextView
+                    android:id="@+id/service_tv_maintain_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_maintain_plan"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="保养计划"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/service_tv_shop_query"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_shop_query"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="门店查询"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="保障理赔"
+                android:textColor="@color/qmui_config_color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                app:qmui_backgroundColor="#FAFBFC"
+                app:qmui_borderColor="#D8DCE2"
+                app:qmui_borderWidth="1px"
+                app:qmui_radius="8dp">
+
+                <TextView
+                    android:id="@+id/service_tv_insurance_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_insurance_receive"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="保险领取"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/service_tv_insurance_claims"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_insurance_claims"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="保险理赔"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/service_tv_insurance_clause"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_insurance_clause"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="保险条款"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="用车服务"
+                android:textColor="@color/qmui_config_color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                app:qmui_backgroundColor="#FAFBFC"
+                app:qmui_borderColor="#D8DCE2"
+                app:qmui_borderWidth="1px"
+                app:qmui_radius="8dp">
+
+                <TextView
+                    android:id="@+id/service_tv_app_usage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_app_usage"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="app使用"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/service_tv_car_usage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_car_usage"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="用车手册"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/service_tv_sold_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/icon_sold_question"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="售后问题"
+                    android:textColor="@color/qmui_config_color_black"
+                    android:textSize="13sp"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
