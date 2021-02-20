@@ -46,6 +46,5 @@ dependencies {
     implementation project(":arch")
     implementation project(":behavior")
     implementation project(":page")
-    implementation project(":car")
 
 }
