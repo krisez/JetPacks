@@ -11,7 +11,6 @@ import cn.krisez.arch.ArchActivity
 import cn.krisez.basic.BasicActivity
 import cn.krisez.behavior.BehaviorActivity
 import cn.krisez.page.PageActivity
-import com.example.car.CarActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.random.Random
@@ -24,8 +23,7 @@ class MainActivity : AppCompatActivity() {
         basic.setOnClickListener { startActivity(Intent(this, BasicActivity::class.java)) }
         arch.setOnClickListener { startActivity(Intent(this, ArchActivity::class.java)) }
         behavior.setOnClickListener { startActivity(Intent(this, BehaviorActivity::class.java)) }
-//        page.setOnClickListener { startActivity(Intent(this, PageActivity::class.java)) }
-        page.setOnClickListener { startActivity(Intent(this, CarActivity::class.java)) }
+        page.setOnClickListener { startActivity(Intent(this, PageActivity::class.java)) }
     }
 
     private fun initColor() {
