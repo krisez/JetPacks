@@ -36,7 +36,7 @@ class MediaAudioActivity : CommonBaseActivity() {
         musicServiceConnection = MusicServiceConnection.getInstance(this, ComponentName(this, MediaPlaybackService::class.java))
 
         play_pause.setOnClickListener {
-            val mediaItem = mediaItems.value?.get(2)
+            val mediaItem = mediaItems.value?.get(0)
             val nowPlaying = musicServiceConnection?.nowPlaying?.value
             // Grab the view for the play/pause button
 

@@ -74,7 +74,7 @@ class MediaPlaybackService : MediaBrowserServiceCompat() {
 
     private var isForegroundService = false
 
-    private val remoteJsonSource: Uri = Uri.parse("http://172.20.141.187/media/audio.json")
+    private val remoteJsonSource: Uri = Uri.parse("http://krisez.cn/media/audio.json")
 
     private val uAmpAudioAttributes = AudioAttributes.Builder().setContentType(C.CONTENT_TYPE_MUSIC)
             .setUsage(C.USAGE_MEDIA).build()
